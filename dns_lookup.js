@@ -1,3 +1,5 @@
+'use strict';
+
 const dns = require('dns');
 const readline = require('readline');
 const rl = readline.createInterface({
