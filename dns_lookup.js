@@ -5,15 +5,13 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-rl.question("What domain?", function (domain) {
+rl.question("Domain Name: ", function (domain) {
     dns.lookup(domain, function (error, address) {
         if (error) {
             console.log(error);
         }
-        console.log(address);
+        console.log("IP Address: ", address);
     });
     rl.close();
 })
 
-// const domain = ('Lookup Domain');
-// console.log(domain);
